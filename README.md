@@ -146,7 +146,7 @@ logger.json
 
 ### 类图
 
-![类图](image?file=%2FUsers%2Fxiayx%2FDocuments%2FProjects%2Flogger%2F%E7%B1%BB%E5%9B%BE.png&mac=wuBDt6y97zH0P3neowON4xQ6ilOx/iQk2KEVBOnu8p8=&hash=bd5b24ff96ff2857b2e12f0e4ea4db3f)
+![类图.png](%E7%B1%BB%E5%9B%BE.png)
 
 *   接口层：提供接口，便于自定义扩展
 
