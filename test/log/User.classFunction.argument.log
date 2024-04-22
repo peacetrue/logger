@@ -1,0 +1,10 @@
+[INFO ] <User>.classFunction: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[args]: function (arg) { return arg; }
+[DEBUG]  return:  function () { [native code] }
+[INFO ] <User>.classFunction: end 
+[INFO ] <User>.classFunction[args]: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[arg]: 1
+[DEBUG]  return:  1
+[INFO ] <User>.classFunction[args]: end 

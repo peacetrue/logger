@@ -1,0 +1,12 @@
+[INFO ] func2: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[arg]: 1
+[INFO ]  func2 other start
+[INFO ]  func: start 
+[DEBUG]   arguments.length: 1 
+[DEBUG]   arguments[arg]: 1
+[INFO ]   func
+[DEBUG]   return:  1
+[INFO ]  func: end 
+[DEBUG]  return:  1
+[INFO ] func2: end 

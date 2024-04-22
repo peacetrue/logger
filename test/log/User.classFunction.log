@@ -1,0 +1,5 @@
+[INFO ] <User>.classFunction: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[args]: 1
+[DEBUG]  return:  1
+[INFO ] <User>.classFunction: end 

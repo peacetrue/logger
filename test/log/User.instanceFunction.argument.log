@@ -1,0 +1,15 @@
+[INFO ] User.constructor: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[instanceFunction]: function (arg) { return arg; }
+[DEBUG]  return:  [object Object]
+[INFO ] User.constructor: end 
+[INFO ] <User>.instanceFunction: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[arg]: function (arg) { return arg; }
+[DEBUG]  return:  function () { [native code] }
+[INFO ] <User>.instanceFunction: end 
+[INFO ] <User>.instanceFunction[arg]: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[arg]: 1
+[DEBUG]  return:  1
+[INFO ] <User>.instanceFunction[arg]: end 

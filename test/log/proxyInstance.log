@@ -1,0 +1,5 @@
+[INFO ] Instance.instanceFunction: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[arg]: 1
+[DEBUG]  return:  1
+[INFO ] Instance.instanceFunction: end 

@@ -1,0 +1,20 @@
+[INFO ] App: start
+[DEBUG]  arguments.length: 2
+[DEBUG]  arguments[0]: Object
+[DEBUG]  arguments[1]: Object
+[INFO ]  React.useState: start
+[INFO ]  React.useState: end
+[DEBUG]  return:  Object
+[INFO ] App: end
+[INFO ] ClanDiagram: start
+[INFO ]  React.useMemo: start
+[INFO ]   React.useMemo[create]: start
+[INFO ]    DiagramFacade.constructor: start
+[INFO ]      ModelDiagramSettings.buildDiagramSettings: start
+[INFO ]       ModelDiagramSettings.defaultDiagramSettings: start
+[INFO ]       ModelDiagramSettings.defaultDiagramSettings: end
+[INFO ]      ModelDiagramSettings.buildDiagramSettings: end
+[INFO ]    DiagramFacade.constructor: end
+[INFO ]   React.useMemo[create]: end
+[INFO ]  React.useMemo: end
+[INFO ] ClanDiagram: end

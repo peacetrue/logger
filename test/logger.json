@@ -1,0 +1,15 @@
+{
+  "//开发环境": null,
+  "development": {
+    "ROOT": "DEBUG",
+    "other category": "INFO"
+  },
+  "//测试环境": null,
+  "test": {
+    "ROOT": "INFO"
+  },
+  "//生产环境": null,
+  "production": {
+    "ROOT": "OFF"
+  }
+}
