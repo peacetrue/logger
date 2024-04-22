@@ -2,7 +2,8 @@
   "//开发环境": null,
   "development": {
     "ROOT": "DEBUG",
-    "other category": "INFO"
+    "User.staticFunction": "OFF",
+    "<User>.staticFunction": "INFO"
   },
   "//测试环境": null,
   "test": {

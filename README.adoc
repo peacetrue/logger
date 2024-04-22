@@ -1,13 +1,15 @@
 == 日志代理
 
-`@peace/logger` 用于代理函数，打印其执行信息，包括：方法签名、参数和返回值。
+`peacetrue-logger` 用于代理函数，打印其执行信息，包括：方法签名、参数和返回值。
+
+// https://github.com/github/markup/issues/1095
 
 == 快速上手
 
 .安装类库：
 [source%nowrap,bash]
 ----
-npm install @peace/logger
+npm install peacetrue-logger
 ----
 
 .配置项目日志：
@@ -123,7 +125,6 @@ include::test/log/console.log[]
 include::test/DefaultLoggerFactory.test.ts[tags=import;basic]
 ----
 
-
 === LoggerProxy
 
 使用控制台日志代理：
@@ -165,6 +166,10 @@ include::test/log/proxyInstance.log[]
 ==== 代理类
 
 参考 <<_快速上手>> 。
+
+==== 选项
+
+
 
 == 注意事项
 

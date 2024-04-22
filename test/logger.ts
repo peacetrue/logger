@@ -1,7 +1,7 @@
 import {consoleLoggerFactory, consoleLoggerProxy, noopLoggerFactory, noopLoggerProxy} from "../src";
 /*
 //tag::import[]
-import {consoleLoggerFactory, consoleLoggerProxy, DefaultLoggerProxy, Logger, noopLoggerFactory, noopLoggerProxy} from "@peace/logger";
+import {consoleLoggerFactory, consoleLoggerProxy, DefaultLoggerProxy, Logger, noopLoggerFactory, noopLoggerProxy} from "peacetrue-logger";
 
 //end::import[]
 */

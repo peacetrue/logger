@@ -1,5 +1,6 @@
 {
   "version": "0.1.0",
+  "private": false,
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -32,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@peace/logger",
+  "name": "peacetrue-logger",
   "module": "dist/logger.esm.js",
   "author": "peace",
   "website": "https://github.com/peacetrue/logger",

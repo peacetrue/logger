@@ -4,7 +4,7 @@ import fs from "fs";
 import {mockLogger, mockLoggerConstructor} from "./MockLogger";
 /*
 //tag::import[]
-import {consoleLoggerProxy} from "@peace/logger";
+import {consoleLoggerProxy} from "peacetrue-logger";
 //end::import[]
 */
 

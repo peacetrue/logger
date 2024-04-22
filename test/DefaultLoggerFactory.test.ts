@@ -1,7 +1,7 @@
 import {CATEGORY_ROOT, consoleLoggerFactory, DEFAULT_LOGGER_LEVEL} from "../src";
 /*
 //tag::import[]
-import {CATEGORY_ROOT, consoleLoggerFactory, DEFAULT_LOGGER_LEVEL} from "@peace/logger";
+import {CATEGORY_ROOT, consoleLoggerFactory, DEFAULT_LOGGER_LEVEL} from "peacetrue-logger";
 
 //end::import[]
 */
