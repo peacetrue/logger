@@ -1,3 +1,4 @@
+/** @deprecated  */
 import {consoleLoggerConstructor} from "./ConsoleLogger";
 import {DefaultLoggerFactory} from "./DefaultLoggerFactory";
 

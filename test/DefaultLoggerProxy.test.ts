@@ -254,6 +254,27 @@ describe('LoggerProxy.contextLogger', () => {
   });
 });
 
+
+//TODO 如何有效的串联 Promise
+describe('LoggerProxy', () => {
+  xit('promise', () => {
+    // consoleLoggerProxy.proxyClass(Promise);
+    let func = <T>(arg: any) => {
+      return new Promise<T>((resolve, reject) => {
+        setTimeout(() => {
+          arg instanceof Error ? reject(arg) : resolve(arg);
+        }, 1);
+      });
+    }
+    func = consoleLoggerProxy.proxyFunction(func);
+    return func<number>(1).finally(() => {
+      fs.createWriteStream('test/log/LoggerProxy.promise.log').write(mockLogger.toString())
+      expect(mockLogger.messages.length).toEqual((2 + 2 + 1));
+      // expect(mockLogger.messages[0].msg.startsWith(`<${User.name}>.classFunction`)).toBeTruthy();
+    });
+  });
+});
+
 // https://stackoverflow.com/questions/1007981/how-to-get-function-parameter-names-values-dynamically
 describe('defaultFunctionArgumentNames', () => {
   it('arrowFunction', () => {

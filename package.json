@@ -1,13 +1,16 @@
 {
-  "version": "0.1.0",
-  "private": false,
-  "license": "MIT",
+  "name": "peacetrue-logger",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "module": "dist/peacetrue-logger.esm.js",
   "files": [
     "dist",
     "src"
   ],
+  "author": "peace",
+  "website": "https://github.com/peacetrue/logger",
+  "license": "MIT",
   "engines": {
     "node": ">=10"
   },
@@ -33,17 +36,13 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "peacetrue-logger",
-  "module": "dist/logger.esm.js",
-  "author": "peace",
-  "website": "https://github.com/peacetrue/logger",
   "size-limit": [
     {
-      "path": "dist/logger.cjs.production.min.js",
+      "path": "dist/peacetrue-logger.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/logger.esm.js",
+      "path": "dist/peacetrue-logger.cjs.development.js",
       "limit": "10 KB"
     }
   ],

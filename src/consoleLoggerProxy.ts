@@ -1,3 +1,4 @@
+/** @deprecated  */
 import {DefaultLoggerProxy} from "./DefaultLoggerProxy";
 import {consoleLoggerFactory} from "./consoleLoggerFactory";
 
