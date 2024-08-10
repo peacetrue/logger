@@ -33,9 +33,6 @@ loggerFactory.configure(require('./logger.json')[process.env.NODE_ENV || 'develo
 //end::basic[]
 
 
-
-
-
 export type InstanceId = (instance: any) => string | number;
 export type InstanceName = (clazz: Function, instance: any) => string;
 
@@ -132,3 +129,4 @@ class FunctionKey extends Object {
 }
 
 */
+

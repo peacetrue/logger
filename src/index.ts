@@ -13,6 +13,8 @@ export {DefaultLoggerFactory} from "./DefaultLoggerFactory";
 export {validContinuer, defaultContinuer, defaultFunctionArgumentNames, DefaultLoggerProxy, contextLogger, ClassCategory, defaultClassCategory, InstanceCategory, defaultInstanceCategory, FunctionCategory, defaultFunctionCategory} from "./DefaultLoggerProxy";
 
 // 实例
-// export {consoleLoggerFactory} from "./consoleLoggerFactory";
-// export {consoleLoggerProxy} from "./consoleLoggerProxy";
+export {consoleLoggerFactory} from "./consoleLoggerFactory";
+export {consoleLoggerProxy} from "./consoleLoggerProxy";
 export * from "./instances";
+
+export * from "./config";

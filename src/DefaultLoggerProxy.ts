@@ -190,7 +190,7 @@ export class DefaultLoggerProxy implements LoggerProxy {
     });
 
     try {
-      DefaultLoggerProxy._logger = new SpacingLogger(logger, spacing);
+      DefaultLoggerProxy._logger = new SpacingLogger(logger, spacing + verbose);
       let result = invoker();
       logger.debug(spacing + this.spacing + verbose + 'return: ', result);
       if (this._continuer && this.returnContinuer(category, result)) {

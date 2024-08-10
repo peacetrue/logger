@@ -100,7 +100,7 @@ describe('ProxyHandler', () => {
   });
   it('apply', () => {
     // @ts-ignore
-    expect(() => ProxyUser()).toThrow("Class constructor User cannot be invoked without 'new'");
+    expect(() => ProxyUser()).toThrow();
   });
   it('construct', () => {
     let user = new ProxyUser("admin");

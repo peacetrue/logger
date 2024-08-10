@@ -1,0 +1,31 @@
+[INFO ] func: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[arg]: 1
+[DEBUG]  return:  [object Promise]
+[INFO ] func: end 
+[INFO ] <Promise>.finally: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[0]: () => {
+      _fs.default.createWriteStream('test/log/LoggerProxy.promise.log').write(_MockLogger.mockLogger.toString());
+      expect(_MockLogger.mockLogger.messages.length).toEqual(2 + 2 + 1);
+      // expect(mockLogger.messages[0].msg.startsWith(`<${User.name}>.classFunction`)).toBeTruthy();
+    }
+[INFO ]  <Promise>.then: start 
+[DEBUG]   arguments.length: 2 
+[DEBUG]   arguments[0]: function () { [native code] }
+[DEBUG]   arguments[1]: function () { [native code] }
+[DEBUG]   return:  [object Promise]
+[INFO ]  <Promise>.then: end 
+[DEBUG]  return:  [object Promise]
+[INFO ] <Promise>.finally: end 
+[INFO ] <Promise>.then: start 
+[DEBUG]  arguments.length: 2 
+[DEBUG]  arguments[0]: () => resolve()
+[DEBUG]  arguments[1]: function () { [native code] }
+[DEBUG]  return:  [object Promise]
+[INFO ] <Promise>.then: end 
+[INFO ] <Promise>.then[0]: start 
+[DEBUG]  arguments.length: 1 
+[DEBUG]  arguments[0]: 1
+[INFO ]  <Promise>.finally[0]: start 
+[DEBUG]   arguments.length: 0 
