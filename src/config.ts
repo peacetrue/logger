@@ -2,11 +2,12 @@ import {loggerFactory, switchToConsole} from "./instances";
 import {consoleLogger} from "./ConsoleLogger";
 import {LoggerLevel} from "./Logger";
 import defaultLoggerConfig from "./logger.config";
+import merge from "lodash.merge";
 
 export function loadLoggerConfig(basePath?: string | string[]): Parameters<typeof configureLogger>[0] {
   if (typeof basePath === "string") {
     try {
-      return require(basePath).default;
+      return require(basePath.trim()).default;
     } catch (e) {
       return defaultLoggerConfig;
     }
@@ -14,7 +15,7 @@ export function loadLoggerConfig(basePath?: string | string[]): Parameters<typeo
     return basePath
       .map(value => loadLoggerConfig(value))
       .reduce((previousValue, currentValue) => {
-        return Object.assign(previousValue, currentValue);
+        return merge(previousValue, currentValue);
       }, {});
   } else {
     basePath = process.env.LOGGER_CONFIG_PATH || './logger.config';

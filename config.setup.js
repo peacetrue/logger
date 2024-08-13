@@ -1,4 +1,4 @@
-import {configureLogger, loadLoggerConfig} from "peacetrue-logger";
+const {configureLogger, loadLoggerConfig} = require("./dist");
 
 if (process.env.NODE_ENV !== 'production') {
     configureLogger(loadLoggerConfig());
