@@ -2,7 +2,7 @@ import {loggerFactory, switchToConsole} from "./instances";
 import {consoleLogger} from "./ConsoleLogger";
 import {LoggerLevel} from "./Logger";
 import defaultLoggerConfig from "./logger.config";
-import merge from "lodash.merge";
+import merge from "lodash/merge";
 
 export function loadLoggerConfig(basePath?: string | string[]): Parameters<typeof configureLogger>[0] {
   if (typeof basePath === "string") {

@@ -10,4 +10,4 @@ yarn.lock
 coverage
 frontend.mk
 frontend-lib.mk
-
+stats.html
