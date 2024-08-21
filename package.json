@@ -29,6 +29,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",

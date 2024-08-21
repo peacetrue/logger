@@ -26,7 +26,7 @@ jobs:
           install-command: npm install --force
 
       - name: Test
-        run: npm run test --ci --coverage --maxWorkers=2
+        run: npm test --ci --coverage --maxWorkers=2
 
       - name: Build
         run: npm run build
