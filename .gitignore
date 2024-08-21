@@ -5,5 +5,9 @@ node_modules
 dist
 .idea
 package-lock.json
+pnpm-lock.yaml
 yarn.lock
 coverage
+frontend.mk
+frontend-lib.mk
+
