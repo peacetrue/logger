@@ -21,6 +21,8 @@ jobs:
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
+        with:
+          args: --force
 
       - name: Test
         run: npm run test --ci --coverage --maxWorkers=2
