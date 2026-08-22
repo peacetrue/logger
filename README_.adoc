@@ -1,4 +1,8 @@
 == 日志代理
+:toc: left
+:toc-title: 目录
+:toclevels: 3
+:sectnums:
 
 `peacetrue-logger` 用于代理函数，打印其执行信息，包括：方法签名、参数和返回值。
 
@@ -167,8 +171,27 @@ include::test/log/proxyInstance.log[]
 
 参考 <<_快速上手>> 。
 
-==== 选项
+== 插件
 
+在项目开发环境配置 peacetrue-logger-compiler（TODO 此名称可优化）
+插件，自动启用日志代理功能，可直接在源码中调用日志：
+
+[source,javascript]
+----
+import {contextLogger} from "peacetrue-logger";
+contextLogger()?.info('some message');
+----
+
+上述为实现目标，我能想到的实现方式如下：
+
+. 在源码导出时，自动使用代理封装
+. 在导入源码时，自动使用代理封装
+
+需要能够配置代理哪些源码。
+
+=== vite
+
+peacetrue-logger-compiler 的 vite 版本。
 
 
 == 注意事项
