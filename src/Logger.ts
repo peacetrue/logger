@@ -1,8 +1,9 @@
+/** 日志级别常量 */
+export const LOGGER_LEVELS = ['OFF', 'ERROR', 'WARN', 'INFO', 'DEBUG', 'TRACE'] as const;
 /** 日志级别 */
-export type LoggerLevel = 'OFF' | 'ERROR' | 'WARN' | 'INFO' | 'DEBUG' | 'TRACE';
-export const LOGGER_LEVELS: LoggerLevel[] = ['OFF', 'ERROR', 'WARN', 'INFO', 'DEBUG', 'TRACE'];
+export type LoggerLevel = typeof LOGGER_LEVELS[number];
 /** 默认日志级别 */
-export const DEFAULT_LOGGER_LEVEL = 'INFO';
+export const DEFAULT_LOGGER_LEVEL: LoggerLevel = 'INFO';
 
 /** 日志 */
 export interface Logger {
