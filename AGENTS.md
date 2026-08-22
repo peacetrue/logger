@@ -32,7 +32,7 @@
 ---
 
 ## 3. Development Workflow & Commands
-- **Test**: `pnpm test` (Runs Jest with Babel TypeScript transform).
+- **Test**: `pnpm test` (Runs Jest with `ts-jest`).
 - **Build**: `pnpm run build` (Runs Rollup to compile dual ESM (`dist/index.mjs`) and CJS (`dist/index.cjs`) formats with declaration files (`dist/index.d.ts`)).
 - **Lint/Typecheck Verification**: Run `pnpm run build && pnpm test` to ensure both compilation and tests pass before committing code.
 

@@ -18,8 +18,8 @@ export function loadLoggerConfig(basePath?: string | string[]): Parameters<typeo
         return merge(previousValue, currentValue);
       }, {});
   } else {
-    basePath = process.env.LOGGER_CONFIG_PATH || './logger.config';
-    return loadLoggerConfig(basePath.split(','));
+    const configPath = process.env.LOGGER_CONFIG_PATH || './logger.config';
+    return loadLoggerConfig(configPath.split(','));
   }
 }
 
