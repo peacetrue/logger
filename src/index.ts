@@ -1,6 +1,6 @@
 // 接口
 export type {Logger} from "./Logger";
-export {LoggerLevel, LOGGER_LEVELS, DEFAULT_LOGGER_LEVEL, noopLogger, noopLoggerConstructor} from "./Logger";
+export {LoggerLevel, LOGGER_LEVELS, DEFAULT_LOGGER_LEVEL, NoopLogger, noopLogger, noopLoggerConstructor} from "./Logger";
 export type {LoggerFactory} from "./LoggerFactory";
 export {CATEGORY_ROOT, noopLoggerFactory} from "./LoggerFactory";
 export type {LoggerProxy} from "./LoggerProxy";

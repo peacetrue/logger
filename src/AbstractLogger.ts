@@ -2,7 +2,7 @@ import {Logger, LOGGER_LEVELS, LoggerLevel} from "./Logger";
 
 export abstract class AbstractLogger implements Logger {
 
-  abstract get level() ;
+  abstract get level(): LoggerLevel;
 
   abstract set level(level: LoggerLevel);
 

@@ -19,12 +19,6 @@ export interface Logger {
 
   isErrorEnabled(): boolean;
 
-  // addContext(key: string, value: any): void;
-  //
-  // removeContext(key: string): void;
-  //
-  // clearContext(): void;
-
   trace(message: any, ...args: any[]): void;
 
   debug(message: any, ...args: any[]): void;
@@ -36,19 +30,14 @@ export interface Logger {
   error(message: any, ...args: any[]): void;
 }
 
-class NoopLogger implements Logger {
+export class NoopLogger implements Logger {
+  constructor(public level: LoggerLevel = 'OFF') {}
 
-  level: LoggerLevel;
-
-  constructor(level: LoggerLevel) {
-    this.level = level;
-  }
-
-  isDebugEnabled(): boolean {
+  isTraceEnabled(): boolean {
     return false;
   }
 
-  isErrorEnabled(): boolean {
+  isDebugEnabled(): boolean {
     return false;
   }
 
@@ -56,33 +45,27 @@ class NoopLogger implements Logger {
     return false;
   }
 
-  isTraceEnabled(): boolean {
-    return false;
-  }
-
   isWarnEnabled(): boolean {
     return false;
   }
 
-  debug(_message: any, ..._args: any[]): void {
+  isErrorEnabled(): boolean {
+    return false;
   }
 
-  error(_message: any, ..._args: any[]): void {
-  }
+  trace(_message: any, ..._args: any[]): void {}
 
-  info(_message: any, ..._args: any[]): void {
-  }
+  debug(_message: any, ..._args: any[]): void {}
 
-  trace(_message: any, ..._args: any[]): void {
-  }
+  info(_message: any, ..._args: any[]): void {}
 
-  warn(_message: any, ..._args: any[]): void {
-  }
+  warn(_message: any, ..._args: any[]): void {}
 
+  error(_message: any, ..._args: any[]): void {}
 }
 
 /** 日志构造器 */
 export type LoggerConstructor = (level: LoggerLevel) => Logger;
 
-export const noopLoggerConstructor = (level: LoggerLevel) => new NoopLogger(level);
+export const noopLoggerConstructor: LoggerConstructor = (level: LoggerLevel) => new NoopLogger(level);
 export const noopLogger = new NoopLogger('OFF');
